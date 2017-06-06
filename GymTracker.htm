@@ -1,55 +1,56 @@
 <html>
+
+
 <head>
 	<title> This tracks my gym pass usage </title>
 	<script type="text/javascript">
+		
 		function iwent()
 		{
 			alert("Good job")
 		}
 	</script>
 </head>
-<body>
 
-	<div class="round-button">
-		<div class="round-button-circle">
-			<a id="leggo" onclick="iwent()" class="round-button" >I Went!</a>
-		</div>
+
+
+<body>
+	<h1 id="price">The price per day: $125</h1>
+	<div id="centerMe">
+		<a id="but" onclick = "iwent()" class="round-button">GO</a>
 	</div>
 </body>
+
+
 <style type="text/css">
-	.round-button {
-	width:25%;
+#price{
+	text-align: center;
 }
-.round-button-circle {
-	width: 100%;
-	height:0;
-	padding-bottom: 100%;
-    border-radius: 50%;
-	border:10px solid #cfdcec;
-    overflow:hidden;
-    
-    background: #42f483; 
-    box-shadow: 0 0 3px gray;
-    text-align: center
+#centerMe{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
 }
-.round-button-circle:hover {
-	background:#41f44d;
-}
-.round-button a {
+.round-button {
     display:block;
-	float:left;
-	width:100%;
-	padding-top:50%;
-    padding-bottom:50%;
-	line-height:1em;
-	margin-top:-0.5em;
-    
-	text-align:center;
-	color:#000000;
-    font-family:Verdana;
-    font-size:1.2em;
-    font-weight:bold;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
     text-decoration:none;
+    background: #464646;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #262626;
 }
 </style>
+
+
 </html>
