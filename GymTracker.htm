@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title> This tracks my gym pass usage </title>
+	<script type="text/javascript">
+		function iwent()
+		{
+			alert("Good job")
+		}
+	</script>
+</head>
+<body>
+
+	<div class="round-button">
+		<div class="round-button-circle">
+			<a id="leggo" onclick="iwent()" class="round-button" >I Went!</a>
+		</div>
+	</div>
+</body>
+<style type="text/css">
+	.round-button {
+	width:25%;
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #cfdcec;
+    overflow:hidden;
+    
+    background: #42f483; 
+    box-shadow: 0 0 3px gray;
+    text-align: center
+}
+.round-button-circle:hover {
+	background:#41f44d;
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:#000000;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+}
+</style>
+</html>
